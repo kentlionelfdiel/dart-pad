@@ -1,0 +1,51 @@
+class Calculator {
+  int addTwonumbers(int num1, int num2) {
+    int sum = num1 + num2;
+    return sum;
+  }
+    void printSum(int num1, int num2) {
+    int sum = addTwonumbers(num1, num2);
+    print("Sum: $sum");
+  }
+  
+  int divTwonumbers(int num1, int num2) {
+    int quotient = (num1 / num2).floor();
+    return quotient;
+  }
+  void printQuo(int num1, int num2) {
+    int quotient = divTwonumbers(num1, num2);
+    print("Quotient: $quotient");
+  }
+  
+  int multiplyTwonumbers(int num1, int num2) {
+    int product = num1 * num2;
+    return product;
+  }
+  void printProd(int num1, int num2) {
+    int product = multiplyTwonumbers(num1, num2);
+    print("Product: $product");
+  }
+   
+  int subTwonumbers(int num1, int num2) {
+    int diff = num1 - num2;
+    return diff;
+  }
+  void printDiff(int num1, int num2) {
+    int diff = subTwonumbers(num1, num2);
+    print("Difference: $diff");
+  }
+}
+
+void main() {
+  Calculator calc = Calculator();
+
+  int num1 = 4;
+  int num2 = 2;
+  
+  
+  calc.printSum(num1, num2);
+  calc.printProd(num1, num2);
+  calc.printQuo(num1, num2);
+  calc.printDiff(num1, num2);
+ 
+}
